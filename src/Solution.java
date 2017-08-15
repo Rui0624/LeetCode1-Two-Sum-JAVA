@@ -1,6 +1,6 @@
 
 public class Solution {
-	public static int[] twoSum(int[] nums, int target) {
+	public int[] twoSum(int[] nums, int target) {
 		int [] sumArray = new int[2];
 		int l = nums.length;
 		for(int i = 0; i < nums.length; i++){
@@ -12,14 +12,16 @@ public class Solution {
 					if(sum == target){
 						sumArray[0] = i;
 						sumArray[1] = j;
-						break;
+						return sumArray;
 					}
 				}
 			}
+            
 		}
 		
-		return sumArray;
-	}  
+		
+        return sumArray;
+    }
   
 }
 
